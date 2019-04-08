@@ -38,7 +38,7 @@ namespace MVC_API_Participation.Controllers
         // GET: Students/Create
         public ActionResult Create()
         {
-            return View();
+            return View()
         }
 
         // POST: Students/Create
