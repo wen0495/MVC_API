@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\wen0495\source\repos\MVC_API\MVC_API_Participation\Models\StudentCourses.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\wen\Source\Repos\wen0495\MVC_API\MVC_API_Participation\Models\StudentCourses.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

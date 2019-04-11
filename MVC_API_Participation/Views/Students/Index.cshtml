@@ -4,6 +4,7 @@
     ViewBag.Title = "Index";
 }
 
+@*<link rel="stylesheet" href="styleDesign.css">*@
 <h2>Index</h2>
 
 <p>
@@ -11,16 +12,34 @@
 </p>
 
 
-@foreach (var item in Model){
-<div class="btn btn-info" style="width: 18rem;"  >
+@foreach (var item in Model)
+{
+<a href="/Students/Details/@item.StudentID">
+   <div class="btn btn-info" style="width:18rem;">
     @*<img src="..." class="card-img-top" alt="...">*@
-    <div class="card-body">
+    <div class="card-body" onclick="showInfo()">
         <h5 class="card-title">@(item.StudentID)  @(item.LastName), @(item.FirstName)</h5>
         @*<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>*@
         
     </div>
-    <a target="_blank" href="~/Views/Registrations/Index.cshtml"></a>
+    <p>
+        @Html.ActionLink("Show Details", "Details.Courses")
+    </p>
+    
 </div>
+</a>}
+   @* <script>
+        (function showInfo() {
+            var detailsInfo = document.getElementsByClassName("btn btn-info");
+            detailsInfo.innerHTML = "<p>@(item.FavoriteColor)</p>";
+            if (detailsInfo.style.display === "none") {
+                //JavaScript use three = --> ===
+                detailsInfo.style.display = "block";
+            } else {
+                detailsInfo.style.display = "none";
+            }
+        })()
+    </script>*@
 }
 
 
