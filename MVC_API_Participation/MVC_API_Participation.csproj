@@ -171,6 +171,7 @@
     <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RegistrationsController.cs" />
+    <Compile Include="Controllers\api\Students1Controller.cs" />
     <Compile Include="Controllers\StudentsController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">

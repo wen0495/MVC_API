@@ -11,16 +11,18 @@
 </p>
 
 
-@foreach (var item in Model){
-<div class="btn btn-info" style="width: 18rem;"  >
-    @*<img src="..." class="card-img-top" alt="...">*@
-    <div class="card-body">
-        <h5 class="card-title">@(item.StudentID)  @(item.LastName), @(item.FirstName)</h5>
-        @*<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>*@
-        
+@foreach (var item in Model)
+{
+<a href="/Students/Details/@item.StudentID">
+    <div class="card student">
+        <img src="https://pbs.twimg.com/profile_images/1061276479974043648/paw1uXCE.jpg"class="card picture" alt="DD">
+        <div class="card-body">
+            <h5 class="card-title">@(item.StudentID)  @(item.LastName), @(item.FirstName)</h5>
+            @*<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>*@
+
+        </div>
     </div>
-    <a target="_blank" href="~/Views/Registrations/Index.cshtml"></a>
-</div>
+</a>
 }
 
 
