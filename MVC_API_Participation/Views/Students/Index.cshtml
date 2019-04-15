@@ -19,7 +19,9 @@
         <div class="card-body">
             <h5 class="card-title">@(item.StudentID)  @(item.LastName), @(item.FirstName)</h5>
             @*<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>*@
-
+            @Html.ActionLink("Edit", "Edit", new { id = item.StudentID }, new { @class = "btn btn-primary" }) |
+            @Html.ActionLink("Details", "Details", new { id = item.StudentID }, new { @class="btn btn-blue"}) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.StudentID }, new { @class = "btn btn-danger" })
         </div>
     </div>
 </a>
@@ -65,9 +67,6 @@
             @Html.DisplayFor(modelItem => item.FavoriteColor)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.StudentID }, new {@class="btn btn-primary" }) |
-            @Html.ActionLink("Details", "Details", new { id=item.StudentID }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.StudentID }, new { @class="btn btn-danger" })
         </td>
     </tr>
 }
